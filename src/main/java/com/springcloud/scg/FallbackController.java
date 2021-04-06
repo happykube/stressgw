@@ -17,7 +17,8 @@ public class FallbackController {
     @GetMapping("/fallback")
     public Mono<String> fallback(ServerWebExchange exchange) {
         Throwable exception = exchange.getAttribute(ServerWebExchangeUtils.CIRCUITBREAKER_EXECUTION_EXCEPTION_ATTR);
-        logger.error("##### ERROR: ", exception);
+        //logger.error("##### ERROR: ", exception);
+        logger.error("***** Circuit Breaker is OPEN. Return Fallback Messages ******");
         return Mono.just("fallback-gateway");
     }
 
