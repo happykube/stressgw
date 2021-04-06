@@ -11,7 +11,7 @@
 	<groupId>com.springcloud</groupId>
 	<artifactId>stressgw</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>scg</name>
+	<name>stressgw</name>
 	<description>API Gateway for stress test</description>
 	<properties>
 		<java.version>1.8</java.version>
