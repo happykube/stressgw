@@ -9,7 +9,7 @@ spring.cloud.gateway:
     filters:
     - RewritePath=/stress/(?<uri>.*), /${uri}
 
-    # Resilience4J configuration for Resilience4jConfig class
+# Resilience4J configuration for Resilience4jConfig class
 # refer: https://resilience4j.readme.io/docs/circuitbreaker
 resilience4j:
   circuitbreaker:
